@@ -9,7 +9,7 @@ Among those features:
 
 Usage example:
 ```javascript
-function test (){
+
 const EnhancedCacheService = wrap(CacheService.getUserCache());
 
 //Use the same basic API as in the native cache
@@ -31,9 +31,6 @@ var d = EnhancedCacheService.getObject('d1',function(s) { return new Date(+s); }
 //Get the date an entry was last updated
 var k1lu = EnhancedCacheService.getLastUpdated('k1'); //k1lu === a Date instance
 
-console.log (n, b, p, d, k1lu)
-console.log (p.name, p.age)
-}
 ```
 
 Blog post I wrote describing this service: [EnhancedCacheService - A Google Apps Script Library](http://orange-coding.blogspot.co.il/2014/10/enhancedcacheservice-google-apps-script.html)
